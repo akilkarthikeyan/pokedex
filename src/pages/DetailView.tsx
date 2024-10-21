@@ -86,7 +86,7 @@ export default function DetailView() {
                                     onClick={() => {
                                         if (pokemonDetail) {
                                             const prevId = pokemonDetail.id === 1 ? 100 : pokemonDetail.id - 1;
-                                            navigate(`cs409-mp2/detail/${prevId}`);
+                                            navigate(`/cs409-mp2/detail/${prevId}`);
                                         }
                                     }}
                                     sx={{backgroundColor: "red", width: "100px", marginRight: "20px"}}
@@ -97,7 +97,7 @@ export default function DetailView() {
                                     onClick={() => {
                                         if (pokemonDetail) {
                                             const nextId = pokemonDetail.id === 100 ? 1 : pokemonDetail.id + 1;
-                                            navigate(`cs409-mp2/detail/${nextId}`);
+                                            navigate(`/cs409-mp2/detail/${nextId}`);
                                         }
                                     }}
                                     sx={{backgroundColor: "red", width: "100px", marginLeft: "20px"}}
