@@ -7,8 +7,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/detail/:id" element={<DetailView />} />
+        <Route path="/pokedex" element={<Home/>} />
+        <Route path="/pokedex/detail/:id" element={<DetailView />} />
       </Routes>
     </Router>
   );

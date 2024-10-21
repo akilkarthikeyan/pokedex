@@ -8,7 +8,7 @@ export default function PokemonCard({ pokemon, size }: {pokemon: PokemonDetail, 
     return (
         <Grid2 size = {size}>
             <Card 
-                onClick={() => {navigate(`/detail/${pokemon.id}`)}} 
+                onClick={() => {navigate(`/pokedex/detail/${pokemon.id}`)}} 
                 sx={{ 
                     backgroundColor: 'lightyellow', 
                     display: "flex", 

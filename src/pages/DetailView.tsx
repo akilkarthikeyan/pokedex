@@ -26,7 +26,7 @@ export default function DetailView() {
                     <Typography variant="h6" component="div" sx={{ paddingLeft: 1, flexGrow: 1}}>
                         Pokédex
                     </Typography>
-                    <Button color="inherit" onClick={() => {navigate("/")}}>Home</Button>
+                    <Button color="inherit" onClick={() => {navigate("/pokedex")}}>Home</Button>
                 </Toolbar>
             </AppBar>
             <Grid2 sx={{ height: 'calc(100vh - 60px)' }}>
@@ -86,7 +86,7 @@ export default function DetailView() {
                                     onClick={() => {
                                         if (pokemonDetail) {
                                             const prevId = pokemonDetail.id === 1 ? 100 : pokemonDetail.id - 1;
-                                            navigate(`/detail/${prevId}`);
+                                            navigate(`/pokedex/detail/${prevId}`);
                                         }
                                     }}
                                     sx={{backgroundColor: "red", width: "100px", marginRight: "20px"}}
@@ -97,7 +97,7 @@ export default function DetailView() {
                                     onClick={() => {
                                         if (pokemonDetail) {
                                             const nextId = pokemonDetail.id === 100 ? 1 : pokemonDetail.id + 1;
-                                            navigate(`/detail/${nextId}`);
+                                            navigate(`/pokedex/detail/${nextId}`);
                                         }
                                     }}
                                     sx={{backgroundColor: "red", width: "100px", marginLeft: "20px"}}
