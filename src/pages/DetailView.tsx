@@ -26,7 +26,7 @@ export default function DetailView() {
                     <Typography variant="h6" component="div" sx={{ paddingLeft: 1, flexGrow: 1}}>
                         Pokédex
                     </Typography>
-                    <Button color="inherit" onClick={() => {navigate("/")}}>Home</Button>
+                    <Button color="inherit" onClick={() => {navigate("/cs409-mp2")}}>Home</Button>
                 </Toolbar>
             </AppBar>
             <Grid2 sx={{ height: 'calc(100vh - 60px)' }}>
