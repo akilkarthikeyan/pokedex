@@ -7,8 +7,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/detail/:id" element={<DetailView />} />
+        <Route path="/cs409-mp2" element={<Home/>} />
+        <Route path="/cs409-mp2/detail/:id" element={<DetailView />} />
       </Routes>
     </Router>
   );
